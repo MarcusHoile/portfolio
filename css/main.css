@@ -1,10 +1,77 @@
 body {
 	max-width: 960px;
 	margin:0 auto;
+	text-align:center;
 }
+
+nav ul li {
+	display: inline-block;
+}
+ul li {
+		list-style-type: none;
+}
+
+h1 {
+	font-size: 42px;
+}
+
 
 .project-title {
 	font-size: 6em;
 	padding:0;
 	margin:0;
+}
+
+
+.col {
+	width: 33%;
+	display:inline-block;
+}
+
+section {
+	border-bottom: solid 1px black;
+	height: 600px;
+}
+
+.project-title:hover {
+	background:url(http://lorempixel.com/900/200);
+}
+
+.skill {
+	border: solid 1px black;
+	margin: 15px auto;
+	height: 60px;
+}
+
+.progress-bar {
+	background: red;
+	height:100%;
+}
+
+.ruby {
+	width: 80%;
+}
+
+.rails {
+	width: 70%;
+}
+
+.javascript {
+	width: 60%;
+}
+
+.css {
+	width: 45%;
+}
+.jquery {
+	width: 33%;
+}
+
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
