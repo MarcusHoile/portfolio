@@ -37,19 +37,23 @@ $(document).ready(function() {
 	});
 // ------> end of sticky nav ------------------
 
-	// --- scroll trigger and skill animation --------
+	// --- scroll trigger and animations --------
 	$(window).on("scroll", function(){
+
+		if($("body").scrollTop() > 1000) {
+			var duration1 = 800;
+			$('.col1').animate({ marginTop: 0 }, duration1, function(){});
+		}
+
 	  if($("body").scrollTop() > 2100){
-	  	console.log("scroll triggered")
-	    $(window).off("scroll");
 	    // Do some stuff here ..
 	    // ------- skills animation -----------
-			var duration = 1200		
-			$('.ruby').animate({ width:"80%" }, duration,function(){});
-			$('.rails').animate({ width:"70%" }, duration,function(){});
-			$('.javascript').animate({ width:"60%" }, duration,function(){});
-			$('.css').animate({ width:"40%" }, duration,function(){});
-			$('.jquery').animate({ width:"30%" }, duration,function(){});
+			var duration2 = 1200		
+			$('.ruby').animate({ width:"80%" }, duration2,function(){});
+			$('.rails').animate({ width:"70%" }, duration2,function(){});
+			$('.javascript').animate({ width:"60%" }, duration2,function(){});
+			$('.css').animate({ width:"40%" }, duration2,function(){});
+			$('.jquery').animate({ width:"30%" }, duration2,function(){});
 	  }
 	});
 

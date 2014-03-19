@@ -73,9 +73,13 @@ h1 {
 }
 
 
-.col {
+.value {
 	width: 20%;
 	display:inline-block;
+}
+
+.col1 {
+	margin-top: 300px;
 }
 .value-image {
 	height:200px;
@@ -94,6 +98,11 @@ section {
 .project-container:hover {
 	background:url(http://lorempixel.com/900/200);
 
+}
+
+.value-image {
+	background:green;
+	border-radius:180px;
 }
 
 .skill {
