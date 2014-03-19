@@ -11,8 +11,15 @@ $(document).ready(function() {
 		$(this).find("h2").show();
 	});
 
+	// -------animate scroll on nav clicks ---------
+	$('li a').click(function(){
+	    var $href = $(this).attr('href');
+	    var $anchor = $($href).offset();
+	    $('body').animate({ scrollTop: $anchor.top });
+	    return false;
+	});
 
-
+	// ----------- END ANIMATE NAV SCROLL-----------------
 
 
 
@@ -37,22 +44,24 @@ $(document).ready(function() {
 	});
 // ------> end of sticky nav ------------------
 
-	// --- scroll trigger and animations --------
+	// --- scroll triggers and animations --------
 	$(window).on("scroll", function(){
 		if($("body").scrollTop() > 20) {
 			$('#landing-title-tagline').addClass('animated fadeOutUp');
 		} else if ($("body").scrollTop() < 60) {
 			$('#landing-title-tagline').removeClass('animated fadeOutUp');
 		}
+		//----------- END tagline fade in/out -----------
 
+		// -------- value prop animations ----------
 		if($("body").scrollTop() > 1000) {
 			var duration1 = 800;
 			$('.col1').animate({ marginTop: 0 }, duration1, function(){});
 		}
+		// ----- END value prop animations -------
 
+		// ------- skills animation -----------
 	  if($("body").scrollTop() > 2100){
-	    // Do some stuff here ..
-	    // ------- skills animation -----------
 			var duration2 = 1200		
 			$('.ruby').animate({ width:"80%" }, duration2,function(){});
 			$('.rails').animate({ width:"70%" }, duration2,function(){});
@@ -60,7 +69,10 @@ $(document).ready(function() {
 			$('.css').animate({ width:"40%" }, duration2,function(){});
 			$('.jquery').animate({ width:"30%" }, duration2,function(){});
 	  }
+	  // --------- END skills animation ----------
 	});
+
+	// ------ END SCROLL TRIGGERS ------------
 
 
 	
