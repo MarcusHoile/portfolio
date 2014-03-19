@@ -1,0 +1,49 @@
+
+		<script>
+			var controller;
+			$(document).ready(function($) {
+				// init controller
+				controller = new ScrollMagic({vertical: true});
+			});
+		</script>
+
+	<script>
+			$(document).ready(function($) {
+				// build tween
+				var tween = new TimelineMax ()
+					.add([
+						TweenMax.to("#landing-pane", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
+						TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),
+						TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})
+					]);
+
+				// build scene
+				var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
+								.setTween(tween)
+								.setPin("#parallaxContainer")
+								.addTo(controller);
+
+				// show indicators (requires debug extension)
+				scene.addIndicators();
+			});
+		</script>
+
+
+		<script>
+			$(document).ready(function($) {
+				// build tween
+				var tween = new TimelineMax ()
+					.add([
+						TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),
+						TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: -175, ease: Linear.easeNone})
+					]);
+
+				// build scene
+				var scene = new ScrollScene({triggerElement: "#trigger2", duration: $(window).width()})
+								.setTween(tween)
+								.addTo(controller);
+
+				// show indicators (requires debug extension)
+				scene.addIndicators();
+			});
+		</script>

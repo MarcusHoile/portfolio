@@ -7,20 +7,15 @@
 	<meta name="keywords" content="developer, ruby, rails, javascript, product manager, entreprenuer, mobile">
 	<meta name="author" content="hoile">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 </head>
 <body>
 	<header>
-		<nav>
-			<div>
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+
 	</header>
 	
 		<div id="landing-pane">
@@ -31,8 +26,18 @@
 				</div>
 			</div>
 		</div>
+		<nav>
+			<div>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+		</nav>			
 	<div id="container">
-		
+	
 		<section id="about-me">
 			<div class="inner">
 				<div class="section-title">
@@ -99,8 +104,31 @@
 			</div>			
 		</section>
 	</div><!-- container -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+
+
+	<script>
+		$(document).ready(function() {
+			var stickyNavTop = $('nav').offset().top;
+
+			var stickyNav = function(){
+				var scrollTop = $(window).scrollTop();
+
+				if (scrollTop > stickyNavTop) { 
+					$('nav').addClass('sticky');
+				} else {
+					$('nav').removeClass('sticky'); 
+				}
+			};
+
+			stickyNav();
+
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});
+	</script>
+
+
 	<noscript>Please activate javascript to view this site properly.</noscript>
 </body>
-</html>
+</html>`
