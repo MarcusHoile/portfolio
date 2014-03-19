@@ -37,7 +37,7 @@ h1 {
 	font-size: 42px;
 }
 #landing-title-tagline {
-	padding-top: 10%;
+	padding-top: 200px;
 }
 
 #about-me {
@@ -73,14 +73,20 @@ h1 {
 }
 
 
+
 .value {
 	width: 20%;
 	display:inline-block;
+	border: solid 1px black;
 }
 
 .col1 {
 	margin-top: 300px;
 }
+
+/*.col2 {
+	margin-top:500px;
+}*/
 .value-image {
 	height:200px;
 }

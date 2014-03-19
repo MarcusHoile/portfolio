@@ -39,6 +39,11 @@ $(document).ready(function() {
 
 	// --- scroll trigger and animations --------
 	$(window).on("scroll", function(){
+		if($("body").scrollTop() > 20) {
+			$('#landing-title-tagline').addClass('animated fadeOutUp');
+		} else if ($("body").scrollTop() < 60) {
+			$('#landing-title-tagline').removeClass('animated fadeOutUp');
+		}
 
 		if($("body").scrollTop() > 1000) {
 			var duration1 = 800;
@@ -56,6 +61,9 @@ $(document).ready(function() {
 			$('.jquery').animate({ width:"30%" }, duration2,function(){});
 	  }
 	});
+
+
+	
 
 });
 
