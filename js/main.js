@@ -21,7 +21,12 @@ $(document).ready(function() {
 
 	// ----------- END ANIMATE NAV SCROLL-----------------
 
-
+	$('#profile-pic').on('mouseover', function(){
+		$(this).attr('src', 'images/TechnoTim.gif')
+	})
+	$('#profile-pic').on('mouseleave', function(){
+		$(this).attr('src', 'images/profilepic.jpg')
+	})	
 
 
 	// ---------    sticky nav  ----------------
