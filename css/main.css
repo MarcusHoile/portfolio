@@ -10,13 +10,14 @@ nav ul li {
 ul li {
 		list-style-type: none;
 		padding: 20px;
+		min-width:100px;
 }
 
 ul {
 	margin:0;
 }
 nav {
-	background: #fff;
+	background: #6DD1C3;
 	height: 60px;
 	position:absolute;
 	margin:0 auto;
@@ -40,15 +41,19 @@ h1 {
 	padding-top: 200px;
 }
 
+.spacer {
+	height:120px;
+}
+
 #about-me {
-	margin-top:120px;
+
 }
 
 
 #container {
 	padding:0;
 	margin:0;
-		max-width: 960px;
+	max-width: 960px;
 	margin:0 auto;
 	text-align:center;
 }
@@ -57,11 +62,9 @@ h1 {
 	margin:0;
 	padding:0;
 	height:700px;
-
-	background: url(../images/panorama_l.jpg) ;/*#537B93*/
+	background: #6DD1C3;
 	background-repeat:no-repeat;
 	color:#fff;
-	background-color:#000;
 	background-position:bottom;
 }
 
@@ -79,10 +82,10 @@ h1 {
 	display:inline-block;
 	border: solid 1px black;
 }
-
+/*
 .col1 {
 	margin-top: 300px;
-}
+}*/
 
 /*.col2 {
 	margin-top:500px;
@@ -93,9 +96,13 @@ h1 {
 section {
 	border-bottom: solid 1px black;
 	height: 600px;
+	margin-top: 120px;
 }
 
-
+nav a {
+	text-decoration:none;
+	color: #fff;
+}
 
 .project-container {
 	height:140px;
@@ -112,7 +119,6 @@ section {
 }
 
 .skill {
-	/*border: solid 1px black;*/
 	background: #e6e6e6;
 	margin: 15px auto;
 	height: 40px;
@@ -135,7 +141,7 @@ section {
 	width: 0;
 }
 
-.javascript {
+.backbone {
 	width: 0;
 }
 

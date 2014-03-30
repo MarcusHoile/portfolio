@@ -72,7 +72,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		stickyNav();
 	});
-// ------> end of sticky nav ------------------
+// ------> END STICKY NAV ------------------
 
 	// --- scroll triggers and animations 
 	$(window).on("scroll", function(){
@@ -84,20 +84,21 @@ $(document).ready(function() {
 		//----------- END tagline fade in/out -----------
 
 		// -------- value prop animations 
-		if($("body").scrollTop() > 1000) {
-			var duration1 = 800;
-			$('.col1').animate({ marginTop: 0 }, duration1, function(){});
-		}
+		// if($("body").scrollTop() > 1000) {
+		// 	var duration1 = 800;
+		// 	$('.col1').animate({ marginTop: 0 }, duration1, function(){});
+		// 	$('.col2').animate({ marginTop: 200 }, duration1, function(){});
+		// }
 		// ----- END value prop animations -------
 
 		// ------- skills animation 
 	  if($("body").scrollTop() > 2100){
 			var duration2 = 1200		
-			$('.ruby').animate({ width:"80%" }, duration2,function(){});
+			$('.ruby').animate({ width:"600px" }, duration2,function(){});
 			$('.rails').animate({ width:"70%" }, duration2,function(){});
-			$('.javascript').animate({ width:"60%" }, duration2,function(){});
-			$('.css').animate({ width:"40%" }, duration2,function(){});
-			$('.jquery').animate({ width:"30%" }, duration2,function(){});
+			$('.backbone').animate({ width:"40%" }, duration2,function(){});
+			$('.css').animate({ width:"50%" }, duration2,function(){});
+			$('.jquery').animate({ width:"60%" }, duration2,function(){});
 	  }
 	  // --------- END skills animation ----------
 	});
