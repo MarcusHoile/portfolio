@@ -102,32 +102,11 @@
 
 	<script>
 	var controller;
+var stickyNavTop = $('nav').offset().top;
+	$(document).ready(function() {
+		//setup global variables
 
-	$(document).ready(function($) {
-		// init controller
-		controller = new ScrollMagic();
-		// build scene
-		new ScrollScene({triggerElement: "#trigger1", duration: 500})
-			.setPin("#about-me")
-			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();
-		new ScrollScene({triggerElement: "#trigger2", duration: 400})
-			.setPin("#value-prop")
-			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();	
-		new ScrollScene({triggerElement: "#trigger3", duration: 400})
-			.setPin("#projects")
-			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();			
-		new ScrollScene({triggerElement: "#trigger4", duration: 400})
-			.setPin("#skills")
-			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();																				
-
+		initialize();															
 	});
 	</script>
 
