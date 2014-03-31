@@ -17,13 +17,13 @@ function initialize(){
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if ($body.scrollTop() > 4500) {
+		if ($body.scrollTop() > 5800) {
 			var duration2 = 1200
-			$('.ruby').animate({ width:"560px" }, duration2,function(){});
-			$('.rails').animate({ width:"490px" }, duration2,function(){});
-			$('.backbone').animate({ width:"280px" }, duration2,function(){});
-			$('.css').animate({ width:"350px" }, duration2,function(){});
-			$('.jquery').animate({ width:"420px" }, duration2,function(){});
+			$('.ruby').animate({ width:"660px" }, duration2,function(){});
+			$('.rails').animate({ width:"630px" }, duration2,function(){});
+			$('.backbone').animate({ width:"430px" }, duration2,function(){});
+			$('.css').animate({ width:"490px" }, duration2,function(){});
+			$('.jquery').animate({ width:"530px" }, duration2,function(){});
 		}
 	} // --------- END skills animation ----------
 
@@ -39,7 +39,7 @@ function initialize(){
 	function setScrollPins(){
 		// init controller
 		controller = new ScrollMagic();
-		var scrollDuration = 600;
+		var scrollDuration = 1000;
 		// build scene
 		new ScrollScene({triggerElement: "#trigger1", duration: scrollDuration})
 			.setPin("#about-me")
