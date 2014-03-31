@@ -13,14 +13,13 @@ function initialize(){
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
-		console.log($body.scrollTop())
 	});
 
 	function skillsAnimation(){
 		// ------- skills animation 
 		if ($body.scrollTop() > 4500) {
-			var duration2 = 1200		
-			$('.ruby').animate({ width:"600px" }, duration2,function(){});
+			var duration2 = 1200
+			$('.ruby').animate({ width:"80%" }, duration2,function(){});
 			$('.rails').animate({ width:"70%" }, duration2,function(){});
 			$('.backbone').animate({ width:"40%" }, duration2,function(){});
 			$('.css').animate({ width:"50%" }, duration2,function(){});
@@ -60,7 +59,7 @@ function initialize(){
 		new ScrollScene({triggerElement: "#trigger4", duration: scrollDuration})
 			.setPin("#skills")
 			.addTo(controller)
-			.triggerHook(0.5)
+			.triggerHook(0)
 			.addIndicators();		
 
 	}
