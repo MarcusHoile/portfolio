@@ -94,7 +94,7 @@ section {
 
 .section-content {
 	width:720px;
-	margin:0;
+	margin:0 auto;
 	padding:0;
 }
 
@@ -107,6 +107,7 @@ nav a {
 	height:140px;
 	margin:0;
 	padding:0;
+	width:100%;
 }
 
 .project-container:hover {
@@ -123,6 +124,12 @@ nav a {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.skill-label {
+	margin:0;
+	padding:0;
+	position:relative;
+	top:-40px;
 }
 
 .skill {
@@ -141,6 +148,7 @@ nav a {
 
 .ruby {
 	width: 0;
+
 }
 
 .rails {
