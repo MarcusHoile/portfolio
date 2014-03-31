@@ -19,11 +19,11 @@ function initialize(){
 		// ------- skills animation 
 		if ($body.scrollTop() > 4500) {
 			var duration2 = 1200
-			$('.ruby').animate({ width:"80%" }, duration2,function(){});
-			$('.rails').animate({ width:"70%" }, duration2,function(){});
-			$('.backbone').animate({ width:"40%" }, duration2,function(){});
-			$('.css').animate({ width:"50%" }, duration2,function(){});
-			$('.jquery').animate({ width:"60%" }, duration2,function(){});
+			$('.ruby').animate({ width:"560px" }, duration2,function(){});
+			$('.rails').animate({ width:"490px" }, duration2,function(){});
+			$('.backbone').animate({ width:"280px" }, duration2,function(){});
+			$('.css').animate({ width:"350px" }, duration2,function(){});
+			$('.jquery').animate({ width:"420px" }, duration2,function(){});
 		}
 	} // --------- END skills animation ----------
 
