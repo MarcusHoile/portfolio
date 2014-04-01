@@ -13,6 +13,10 @@ ul li {
 		min-width:100px;
 }
 
+p {
+	font-size:22px;
+}
+
 ul {
 	margin:0;
 	padding:0;
@@ -45,17 +49,33 @@ h1 {
 	height:120px;
 }
 
-#about-me {
+a {
+	text-decoration:none;
+}
 
+#profile-pic {
+	height: 200px;
+	background-position: -40px 0;
 }
 
 
-#container {
+#pic-container {
+	width:200px;
+	height: 200px;
+	border-radius: 200px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+
+.container {
 	padding:0;
+	padding-top: 100px;
 	margin:0;
-	max-width: 960px;
 	margin:0 auto;
 	text-align:center;
+}
+.container:nth-child(odd) {
+    background-color: #EEEEEE;
 }
 
 #landing-pane {
@@ -89,13 +109,21 @@ section {
 	width: 900px;
 }
 
+#projects {
+	height: 1800px;
+}
+
+#contact {
+	height: 500px;
+}
+
 .section-content {
 	width:720px;
 	margin:0 auto;
 	padding:0;
 }
 
-#value-prop .section-content {
+#value-prop .section-content, #projects .section-content {
 	width:900px;
 	margin:0 auto;
 }
@@ -106,20 +134,60 @@ nav a {
 }
 
 .project-container {
-	height:140px;
-	margin:0;
+	
+	margin:150px auto;
 	padding:0;
-	width:100%;
+	width:740px;
+	height: 400px;
+	position:relative;
+	overflow:hidden;
 }
 
-.project-container:hover {
-	background:url(http://lorempixel.com/900/200);
+.project-container img {
+	height:400px;
+	margin:0;
+}
+
+h2 {
+	font-size: 60px;
+	margin:0;
+}
+
+.button {
+	height: 40px;
+	width: 100px;
+	background: #6DD1C3;
+	line-height: 40px;
+	margin:0 auto;
+	color: #fff;
+}
+
+.button:hover {
+	background: rgba(109,209,195, 0.6);
+}
+
+
+.overlay {
+	position: absolute;
+	top:0;
+	height:100%;
+	width: 100%;
+	display:none;
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
+.project-container:hover .overlay {
+	display:block;
 }
 
 .project-title {
 	font-size: 6em;
 	padding:0;
 	margin:0;
+}
+
+#project-content {
+	padding:40px;
 }
 
 #skills {
@@ -135,7 +203,7 @@ nav a {
 }
 
 .skill {
-	background: #e6e6e6;
+	background: #EEEEEE;
 	margin: 15px;
 	height: 30px;
 	color:#fff;

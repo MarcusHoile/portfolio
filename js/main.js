@@ -7,7 +7,7 @@ function initialize(){
 	var $stickyNavTop = $('nav').offset().top;
 	setScrollPins();
 	setJquerySelectors();
-	profilePics();
+	// profilePics();
 	
 	$(window).scroll(function() {
 		stickyNav();
@@ -17,7 +17,7 @@ function initialize(){
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if ($body.scrollTop() > 5800) {
+		if ($body.scrollTop() > 5500) {
 			var duration2 = 1200
 			$('.ruby').animate({ width:"660px" }, duration2,function(){});
 			$('.rails').animate({ width:"630px" }, duration2,function(){});
@@ -45,17 +45,7 @@ function initialize(){
 			.setPin("#about-me")
 			.addTo(controller)
 			.triggerHook(0)
-			.addIndicators();
-		new ScrollScene({triggerElement: "#trigger2", duration: scrollDuration})
-			.setPin("#value-prop")
-			.addTo(controller)
-			.triggerHook(0)
 			.addIndicators();	
-		new ScrollScene({triggerElement: "#trigger3", duration: scrollDuration})
-			.setPin("#projects")
-			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();			
 		new ScrollScene({triggerElement: "#trigger4", duration: scrollDuration})
 			.setPin("#skills")
 			.addTo(controller)
@@ -77,14 +67,14 @@ function initialize(){
 
 	function setJquerySelectors(){
 		//------- hide/show project titles
-		var $projectContainer = $('.project-container');
-		$projectContainer.on('mouseenter', function(){
-			$(this).find("h2").hide();
-		});
+		// var $projectContainer = $('.project-container');
+		// $projectContainer.on('mouseenter', function(){
+		// 	$(this).find("h2").hide();
+		// });
 
-		$projectContainer.on('mouseleave', function(){
-			$(this).find("h2").show();
-		}); // END HIDE/SHOW project titles --------------
+		// $projectContainer.on('mouseleave', function(){
+		// 	$(this).find("h2").show();
+		// }); // END HIDE/SHOW project titles --------------
 
 		// -------animate scroll on nav clicks
 		$('li a').click(function(){
