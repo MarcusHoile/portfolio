@@ -13,7 +13,6 @@ function initialize(){
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
-		console.log($body.scrollTop());
 	});
 
 	function skillsAnimation(){

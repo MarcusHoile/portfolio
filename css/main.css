@@ -6,10 +6,11 @@ body {
 
 nav ul li {
 	display: inline-block;
+	padding: 20px;
 }
 ul li {
 		list-style-type: none;
-		padding: 20px;
+		
 		min-width:100px;
 }
 
@@ -25,6 +26,21 @@ ul {
 	margin:0;
 	padding:0;
 }
+
+#contact-list {
+	width:400px;
+	text-align:left;
+	margin: 0 auto;
+}
+
+#contact-list li {
+	height: 40px;
+	line-height:40px;
+}
+
+#contact-list a {
+}
+
 nav {
 	background: #6DD1C3;
 	height: 60px;
@@ -115,7 +131,7 @@ section {
 
 #projects {
 	height: 1900px;
-	margin:0;
+	margin:0 auto;
 }
 
 #contact {
@@ -143,7 +159,6 @@ nav a {
 }
 
 .project-container {
-	
 	margin:150px auto;
 	padding:0;
 	width:740px;
