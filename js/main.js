@@ -13,11 +13,12 @@ function initialize(){
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
+		console.log($body.scrollTop());
 	});
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if ($body.scrollTop() > 5500) {
+		if ($body.scrollTop() > 4700) {
 			var duration2 = 1200
 			$('.ruby').animate({ width:"660px" }, duration2,function(){});
 			$('.rails').animate({ width:"630px" }, duration2,function(){});
