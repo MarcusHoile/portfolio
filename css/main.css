@@ -14,7 +14,11 @@ ul li {
 }
 
 p {
-	font-size:22px;
+	font-size:18px;
+}
+
+#pitch {
+	font-size: 22px;
 }
 
 ul {
@@ -111,10 +115,15 @@ section {
 
 #projects {
 	height: 1900px;
+	margin:0;
 }
 
 #contact {
 	height: 500px;
+}
+
+i {
+	font-size: 40px;
 }
 
 .section-content {
