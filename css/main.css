@@ -274,3 +274,16 @@ h2 {
    height: 0;
    clear: both;
 }
+
+/* mobile css */
+
+/* high resolution screens */
+@media (-webkit-min-device-pixel-ratio: 2),
+             (min--moz-device-pixel-ratio: 2),
+             (min-resolution: 300dpi) {
+  #landing-pane {
+  	background: red;
+}
+
+
+
