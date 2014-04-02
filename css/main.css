@@ -2,6 +2,7 @@ body {
 	padding:0;
 	margin:0;
 	text-align:center;
+	background: #eeeeee;
 }
 
 nav ul li {
@@ -38,7 +39,8 @@ ul {
 	line-height:40px;
 }
 
-#contact-list a {
+#contact-list p {
+	line-height: 40px;
 }
 
 nav {
@@ -94,8 +96,8 @@ a {
 	margin:0 auto;
 	text-align:center;
 }
-.container:nth-child(odd) {
-    background-color: #EEEEEE;
+.container:nth-child(even) {
+    background-color: #ffffff;
 }
 
 #landing-pane {

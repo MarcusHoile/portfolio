@@ -44,14 +44,11 @@ function initialize(){
 		new ScrollScene({triggerElement: "#trigger1", duration: scrollDuration})
 			.setPin("#about-me")
 			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();	
+			.triggerHook(0);
 		new ScrollScene({triggerElement: "#trigger4", duration: scrollDuration})
 			.setPin("#skills")
 			.addTo(controller)
-			.triggerHook(0)
-			.addIndicators();		
-
+			.triggerHook(0);		
 	}
 	function stickyNav(){
 		
