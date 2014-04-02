@@ -283,6 +283,11 @@ h2 {
              (min-resolution: 300dpi) {
   #landing-pane {
   	background: red;
+  }
+  #value-prop .section-content, #projects .section-content {
+		max-width:480px;
+		margin:0 auto;
+	}
 }
 
 
