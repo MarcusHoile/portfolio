@@ -24,6 +24,8 @@ function initialize(){
 			$('.backbone').animate({ width:"430px" }, duration2,function(){});
 			$('.css').animate({ width:"490px" }, duration2,function(){});
 			$('.jquery').animate({ width:"530px" }, duration2,function(){});
+			$('.ajax').animate({ width:"430px" }, duration2,function(){});
+			$('.bow-hunting').animate({ width:"680px" }, duration2,function(){});
 		}
 	} // --------- END skills animation ----------
 
@@ -81,6 +83,13 @@ function initialize(){
 			return false;
 		}); // ----------- END ANIMATE NAV SCROLL-----------------
 
+		// arrow on landing pane
+		$('#scroll-indicator').click(function(){
+			var $href = '#about-me';
+			var $anchor = $($href).offset();
+			$body.animate({ scrollTop: $anchor.top }, 800);
+			return false;
+		})
 	}
 
 	function profilePics(){	

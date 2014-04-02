@@ -242,26 +242,29 @@ h2 {
 	height:100%;
 }
 
-.ruby {
-	width: 0;
-
-}
-
-.rails {
+.ruby, .rails, .backbone, .jquery, .css, .ajax, .bow-hunting {
 	width: 0;
 }
 
-.backbone {
-	width: 0;
+#scroll-indicator {
+	height:50px;
+	width:50px;
+	position:relative;
+	top: 20%;
+	margin: 0 auto;
+	border: solid 2px #fff;
+	border-radius: 30px;
+	font-size: 24px;
 }
 
-.css {
-	width: 0;
-}
-.jquery {
-	width: 0;
+#scroll-indicator i {
+	height: 50px;
+	line-height: 50px;
 }
 
+#scroll-indicator:hover {
+	background: rgba(255,255,255, 0.3);
+}
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
