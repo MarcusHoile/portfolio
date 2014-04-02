@@ -3,6 +3,7 @@ body {
 	margin:0;
 	text-align:center;
 	background: #eeeeee;
+	font-family: 'Lato';
 }
 
 nav ul li {
@@ -28,19 +29,47 @@ ul {
 	padding:0;
 }
 
-#contact-list {
-	width:400px;
-	text-align:left;
+.contact {
 	margin: 0 auto;
+	color: #fff;
 }
 
-#contact-list li {
+.hello {
+	width:400px;
+	text-align:center;
+	font-size: 40px;
+	
+}
+
+.hello li a, .hello li a:visited, .hello li a:active {
+	color: #fff;
+}
+
+.hello li {
+	padding: 20px 0;
+}
+
+.connect a:visited {
+	color: #fff;
+}
+
+.contact li {
 	height: 40px;
 	line-height:40px;
+	color: #6DD1C3;
 }
 
-#contact-list p {
+.contact p {
 	line-height: 40px;
+}
+
+.connect {
+	display:inline-block;
+	width:100%;
+}
+.connect li {
+	min-width: 100px;
+	display:inline-block;
 }
 
 nav {
@@ -100,6 +129,10 @@ a {
     background-color: #ffffff;
 }
 
+#content-container {
+	background: #6DD1C3;
+}
+
 #landing-pane {
 	margin:0;
 	padding:0;
@@ -139,6 +172,7 @@ section {
 
 #contact {
 	height: 500px;
+	
 }
 
 i {
@@ -194,17 +228,21 @@ h2 {
 }
 
 
-.overlay {
+.project-container .overlay {
 	position: absolute;
 	top:0;
 	height:100%;
 	width: 100%;
-	display:none;
 	background-color: rgba(255, 255, 255, 0.95);
+	opacity:0;
+	-webkit-transition: opacity 1s ease-out;
+	height: 0;
+	overflow: hidden;
 }
 
 .project-container:hover .overlay {
-	display:block;
+	opacity:1;
+	height:400px;
 }
 
 .project-title {
@@ -278,14 +316,14 @@ h2 {
 /* mobile css */
 
 /* high resolution screens */
-@media (-webkit-min-device-pixel-ratio: 2),
+/*@media (-webkit-min-device-pixel-ratio: 2),
              (min--moz-device-pixel-ratio: 2),
              (min-resolution: 300dpi) {
   #value-prop .section-content, #projects .section-content {
 		max-width:480px;
 		margin:0 auto;
 	}
-}
+}*/
 
 
 

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
@@ -22,8 +23,8 @@
 	<div id="landing-pane">
 		<div class="inner">
 			<div class="section-title" id="landing-title-tagline">
-				<h1>Looking for a full stack developer?</h1>
-				<h2>You found him</h2>
+				<h1 id='page-title'>Digital Dude</h1>
+				<p id="tagline">You found him</p>
 			</div>
 		</div>
 <div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
@@ -114,17 +115,21 @@
 				</div>	
 			</section>
 		</div>
-		<div class="container">		
+		<div class="container" id="content-container">		
 			<section id="contact" name="contact">
 				<div class="section-content">
 					<h2>Say Hello</h2>
-					<ul id="contact-list">
-						<li><i class="fa fa-envelope"></i> <a href="mailto:hello@marcushoile.com">marcushoile@gmail.com</a></li>
-						<li><i class="fa fa-phone-square"></i> <a href="tel:0412911555">0412 911 555</a></li>
-						<li><i class="fa fa-github-square"></i> <a href="http://github.com/mollymoile">github.com/mollymoile</a></li>
-						<li><i class="fa fa-twitter-square"></i> <a href="http://twitter.com/marcushoile">@marcushoile</a></li>
-						<li><i class="fa fa-linkedin-square"></i> <a href="http://au.linkedin.com/in/marcushoile">linkedin</a></li>
-						<li><i class="fa fa-edit"></i> <a href="http://marcushoile.blogspot.com.au">digital musings (blog)</a></li>
+					<ul  class="contact hello">
+						<li> <a href="mailto:hello@marcushoile.com">marcushoile@gmail.com</a></li>
+						<li> <a href="tel:0412911555">0412 911 555</a></li>
+						
+					</ul>
+					<ul class="contact connect">
+						<p>or connect with me</p>
+						<li><a href="http://github.com/mollymoile"><i class="fa fa-github-square"></i></a></li>
+						<li><a href="http://au.linkedin.com/in/marcushoile"><i class="fa fa-linkedin-square"></i></a></li>
+						<li><a href="http://twitter.com/marcushoile"><i class="fa fa-twitter-square"></i></a></li>
+						<li><a href="http://marcushoile.blogspot.com.au"><i class="fa fa-edit"></i> </a></li>
 					</ul>
 				</div>			
 			</section>
