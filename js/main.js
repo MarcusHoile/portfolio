@@ -65,15 +65,6 @@ function initialize(){
 	};
 
 	function setJquerySelectors(){
-		//------- hide/show project titles
-		// var $projectContainer = $('.project-container');
-		// $projectContainer.on('mouseenter', function(){
-		// 	$(this).find("h2").hide();
-		// });
-
-		// $projectContainer.on('mouseleave', function(){
-		// 	$(this).find("h2").show();
-		// }); // END HIDE/SHOW project titles --------------
 
 		// -------animate scroll on nav clicks
 		$('li a').click(function(){
