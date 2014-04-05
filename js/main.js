@@ -5,7 +5,7 @@ function initialize(){
 	var controller;
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
-	setScrollPins();
+	// setScrollPins();
 	setJquerySelectors();
 	// profilePics();
 	
@@ -17,15 +17,15 @@ function initialize(){
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if ($body.scrollTop() > 4700) {
+		if ($body.scrollTop() > 3600) {
 			var duration2 = 1200
 			$('.ruby').animate({ width:"660px" }, duration2,function(){});
-			$('.rails').animate({ width:"630px" }, duration2,function(){});
-			$('.backbone').animate({ width:"430px" }, duration2,function(){});
-			$('.css').animate({ width:"490px" }, duration2,function(){});
-			$('.jquery').animate({ width:"530px" }, duration2,function(){});
-			$('.ajax').animate({ width:"430px" }, duration2,function(){});
-			$('.bow-hunting').animate({ width:"680px" }, duration2,function(){});
+			$('.rails').delay(50).animate({ width:"630px" }, duration2,function(){});
+			$('.jquery').delay(100).animate({ width:"530px" }, duration2,function(){});
+			$('.css').delay(150).animate({ width:"490px" }, duration2,function(){});
+			$('.ajax').delay(200).animate({ width:"430px" }, duration2,function(){});
+			$('.backbone').delay(250).animate({ width:"430px" }, duration2,function(){});
+			$('.bow-hunting').delay(500).animate({ width:"680px" }, duration2,function(){});
 		}
 	} // --------- END skills animation ----------
 

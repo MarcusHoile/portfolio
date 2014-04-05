@@ -19,41 +19,37 @@
 	<header>
 
 	</header>
-	
-	<div id="landing-pane">
-		<div class="inner">
-			<div class="section-title" id="landing-title-tagline">
-				<h1 id='page-title'>The Digital Dude</h1>
-				<p id="tagline">You found him</p>
+	<div id="parallaxContainer">
+		<div id="landing-pane">
+			<div class="inner">
+				<div class="section-title" id="landing-title-tagline">
+					<h1 id='page-title'>The Digital Dude</h1>
+					<p id="tagline">You found him</p>
+				</div>	
+				<div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
+				<img src="images/skyline.png" alt="" id="skyline">
 			</div>
-		
-		<div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
-		<img src="images/skyline.png" alt="" id="skyline">
-	</div>
-	</div>
-	<nav>
-		<div>
-			<ul>
-				<li><a href="#about-me">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="http://marcushoile.blogspot.com.au">Blog</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
 		</div>
-	</nav>			
-	<div class="container">
-		<div class="spacer"></div>
-		<div id="trigger1"></div>
+
+		<nav>
+			<div>
+				<ul>
+					<li><a href="#about-me">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="http://marcushoile.blogspot.com.au">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
 		<section id="about-me" name="about-me">
 			<div class="section-content">
 				<h1>Hello</h1>
 				<div id="pic-container"><img id="profile-pic" src="images/profile_edited.jpg" alt=""></div>
 				<p id="pitch">My name is Marcus Hoile and I am a full stack web developer. I am a recent graduate of General Assembly and I love to code. I am looking for opportunities to take my rails skills to the next level. Take a look at some of my work below.</p>
 			</div>
-
 		</section>
-	</div>
-	<div class="container">
 		<section id="projects" name="projects">
 			<div class="section-content">
 				<h2>Projects</h2>
@@ -97,9 +93,6 @@
 					</div>
 				</div>
 			</section>
-		</div>
-		<div class="container">		
-			<div id="trigger4"></div>
 			<section id="skills">
 				<div class="section-content">
 					<h2>My Mad Skills</h2>
@@ -114,9 +107,7 @@
 						<div class="skill"><div class="progress-bar bow-hunting"></div><p class="skill-label">Bow Hunting</p></div>	
 					</div>				
 				</div>	
-			</section>
-		</div>
-		<div class="container" id="content-container">		
+			</section>		
 			<section id="contact" name="contact">
 				<div class="section-content">
 					<h2>Say Hello</h2>
@@ -134,13 +125,27 @@
 					</ul>
 				</div>			
 			</section>
-		</div><!-- container -->
 
 
 			<script>
 
 			$(document).ready(function() {
-				initialize();															
+				initialize();
+				// var tween = new TimelineMax ()
+				// 	.add([
+				// 		TweenMax.to("#parallaxContainer .layer1", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
+				// 		TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),
+				// 		TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})
+				// 	]);
+
+				// // build scene
+				// var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
+				// 				.setTween(tween)
+				// 				.setPin("#parallaxContainer")
+				// 				.addTo(controller);
+
+				// // show indicators (requires debug extension)
+				// scene.addIndicators();			});
 			});
 			</script>
 
