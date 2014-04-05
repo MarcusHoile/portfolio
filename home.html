@@ -14,6 +14,9 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
 </head>
 <body>
 	<header>
@@ -27,8 +30,10 @@
 					<p id="tagline">You found him</p>
 				</div>	
 				<div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
-				<img src="images/skyline.png" alt="" id="skyline">
+				<!-- <img src="images/skyline.png" alt="" id="skyline"> -->
+				<div id="skyline"></div>
 			</div>
+
 		</div>
 
 		<nav>
@@ -42,7 +47,6 @@
 			</div>
 		</nav>
 
-	</div>
 		<section id="about-me" name="about-me">
 			<div class="section-content">
 				<h1>Hello</h1>
@@ -50,6 +54,7 @@
 				<p id="pitch">My name is Marcus Hoile and I am a full stack web developer. I am a recent graduate of General Assembly and I love to code. I am looking for opportunities to take my rails skills to the next level. Take a look at some of my work below.</p>
 			</div>
 		</section>
+	</div>
 		<section id="projects" name="projects">
 			<div class="section-content">
 				<h2>Projects</h2>
@@ -131,21 +136,7 @@
 
 			$(document).ready(function() {
 				initialize();
-				// var tween = new TimelineMax ()
-				// 	.add([
-				// 		TweenMax.to("#parallaxContainer .layer1", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
-				// 		TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),
-				// 		TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})
-				// 	]);
-
-				// // build scene
-				// var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
-				// 				.setTween(tween)
-				// 				.setPin("#parallaxContainer")
-				// 				.addTo(controller);
-
-				// // show indicators (requires debug extension)
-				// scene.addIndicators();			});
+		
 			});
 			</script>
 

@@ -2,18 +2,46 @@
 function initialize(){
 
 	// global vairables
-	var controller;
+	var controller = new ScrollMagic();
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
 	// setScrollPins();
 	setJquerySelectors();
+	
 	// profilePics();
+	// addParallax();
+
+	function addParallax() {
+		var tween = new TimelineMax();
+			tween.add([
+				TweenMax.to("#parallaxContainer #landing-pane", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
+				TweenMax.to("#parallaxContainer #about-me", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone})
+			]);
+
+		// build scene
+		var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
+						.setTween(tween)
+						.setPin("#parallaxContainer")
+						.addTo(controller);
+
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	}
 	
 	$(window).scroll(function() {
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
+		skylineAnimate();
+		
 	});
+
+
+
+	function skylineAnimate() {
+		var $landingPane = $('#landing-pane');
+		$landingPane.animate({'opacity': '0'}, 500, 'linear');
+	}
 
 	function skillsAnimation(){
 		// ------- skills animation 
@@ -31,10 +59,14 @@ function initialize(){
 
 	function taglineFade(){
 		var $tagline = $('#landing-title-tagline');
+		var $skyline = $('#landing-pane');
 		if($body.scrollTop() > 20) {
 			$tagline.addClass('animated fadeOutUp');
+			// $skyline.addClass('animated fadeInUp');
+			// $skyline.removeClass('fadeInDown');
 		} else if ($body.scrollTop() < 60) {
-			$tagline.removeClass('animated fadeOutUp');
+			// $skyline.removeClass('fadeOutUp');
+			$tagline.removeClass('fadeOutUp');
 		}
 	}
 
