@@ -5,6 +5,7 @@ function initialize(){
 	var controller = new ScrollMagic();
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
+	var $contactTop = ($('#contact').offset().top);
 	// setScrollPins();
 	setJquerySelectors();
 	
@@ -61,10 +62,9 @@ function initialize(){
 		var $tagline = $('#landing-title-tagline');
 		var $skyline = $('#landing-pane');
 		if($body.scrollTop() > 20) {
-			console.log('adding class')
 			$tagline.addClass('fadeOutUp');
-			// $skyline.addClass('animated fadeInUp');
-			// $skyline.removeClass('fadeInDown');
+		} else if ($body.scrollTop() < 20) {
+			$tagline.removeClass('fadeOutUp');
 		}
 	}
 
@@ -91,6 +91,10 @@ function initialize(){
 			$nav.addClass('sticky');
 		} else {
 			$nav.removeClass('sticky'); 
+		}
+		// hide nav when on contact section
+		if ($windowScrollTop > $contactTop) {
+			$nav.removeClass('sticky'); 	
 		}
 	};
 
