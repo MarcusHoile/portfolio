@@ -6,6 +6,9 @@ body {
 	font-family: 'Lato';
 	height:100%;
 }
+html {
+	height:100%;
+}
 
 nav ul li {
 	display: inline-block;
@@ -191,9 +194,14 @@ section {
 }
 
 #contact {
-	height: 500px;
+	height: 100%;
 	background: #6DD1C3;
+	display:table;
+}
 
+#contact-info {
+	display:table-cell;
+	vertical-align: middle;
 }
 
 i {

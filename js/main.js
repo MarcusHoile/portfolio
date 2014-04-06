@@ -32,7 +32,7 @@ function initialize(){
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
-		skylineAnimate();
+		// skylineAnimate();
 		
 	});
 
@@ -61,12 +61,10 @@ function initialize(){
 		var $tagline = $('#landing-title-tagline');
 		var $skyline = $('#landing-pane');
 		if($body.scrollTop() > 20) {
-			$tagline.addClass('animated fadeOutUp');
+			console.log('adding class')
+			$tagline.addClass('fadeOutUp');
 			// $skyline.addClass('animated fadeInUp');
 			// $skyline.removeClass('fadeInDown');
-		} else if ($body.scrollTop() < 60) {
-			// $skyline.removeClass('fadeOutUp');
-			$tagline.removeClass('fadeOutUp');
 		}
 	}
 
