@@ -22,13 +22,13 @@ function initialize(){
 		// ------- skills animation 
 		if (($html.scrollTop() > 3400) || ($body.scrollTop() > 3400)) {
 			var duration = 1200
-			$('.ruby').animate({ width:"660px" }, {duration: duration});
-			$('.rails').delay(50).animate({ width:"630px" }, duration, function(){});
-			$('.jquery').delay(100).animate({ width:"530px" }, duration, function(){});
-			$('.css').delay(150).animate({ width:"490px" }, duration, function(){});
-			$('.ajax').delay(200).animate({ width:"430px" }, duration, function(){});
-			$('.backbone').delay(250).animate({ width:"430px" }, duration, function(){});
-			$('.bow-hunting').delay(500).animate({ width:"680px" }, duration, function(){});
+			$('.ruby').animate({ width:"93%" }, {duration: duration});
+			$('.rails').delay(50).animate({ width:"88%" }, duration, function(){});
+			$('.jquery').delay(100).animate({ width:"75%" }, duration, function(){});
+			$('.css').delay(150).animate({ width:"73%" }, duration, function(){});
+			$('.ajax').delay(200).animate({ width:"64%" }, duration, function(){});
+			$('.backbone').delay(250).animate({ width:"64%" }, duration, function(){});
+			$('.bow-hunting').delay(500).animate({ width:"98%" }, duration, function(){});
 		}
 	} // --------- END skills animation ----------
 

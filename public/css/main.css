@@ -8,8 +8,9 @@ body {
 	font-family: 'Lato';
 	height:100%;
 }
-html {
+html, body, section {
 	height:100%;
+	width:100%;
 }
 
 nav ul li {
@@ -28,6 +29,10 @@ p {
 
 #pitch {
 	font-size: 22px;
+}
+
+#tagline, .fa-angle-down {
+	color: #000;
 }
 
 ul {
@@ -102,7 +107,7 @@ h1 {
 	font-size: 42px;
 }
 #landing-title-tagline {
-	padding-top: 200px;
+	padding-top: 20%;
 }
 
 .spacer {
@@ -143,9 +148,9 @@ a {
 #landing-pane {
 	margin:0;
 	padding:0;
-	height:700px;
+	min-height:100%;
 	background-color: #6DD1C3;
-	background:url(../images/skyline.png) no-repeat center bottom fixed;
+	background:url(../images/skyline.png) no-repeat center bottom;
 	background-size: 100%;
 	color:#fff;
 }
@@ -200,7 +205,7 @@ a:link, a:visited, a:active {
 }
 
 .section-content {
-	width:720px;
+	max-width:720px;
 	margin:0 auto;
 }
 
@@ -209,7 +214,7 @@ a:link, a:visited, a:active {
 }
 
 #value-prop .section-content, #projects .section-content {
-	width:900px;
+	max-width:900px;
 	margin:0 auto;
 }
 
@@ -221,14 +226,14 @@ nav a {
 .project-container {
 	margin:200px auto;
 	padding:0;
-	width:740px;
-	height: 400px;
+	max-width:740px;
+	/*height: 400px;*/
 	position:relative;
 	overflow:hidden;
 }
 
 .project-container img {
-	height:400px;
+	width:100%;
 	margin:0;
 }
 
@@ -283,8 +288,7 @@ h2 {
 
 #skills {
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 .skill-label {
 	margin:0;
