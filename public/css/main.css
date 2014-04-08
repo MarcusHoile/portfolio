@@ -37,7 +37,6 @@ ul {
 
 .contact {
 	margin: 0 auto;
-	color: #fff;
 }
 
 .hello {
@@ -62,7 +61,6 @@ ul {
 .contact li {
 	height: 40px;
 	line-height:40px;
-	color: #6DD1C3;
 }
 
 .contact p {
@@ -132,12 +130,6 @@ a {
 .container {
 
 }
-/*.container:nth-child(even) {
-    background-color: #ffffff;
-}
-.container:nth-child(even) {
-    background-color: #ffffff;
-}*/
 
 #about-me, #skills {
 	background: #fff;
@@ -148,11 +140,6 @@ a {
 }
 
 
-
-/*#content-container {
-	background: #6DD1C3;
-}*/
-
 #landing-pane {
 	margin:0;
 	padding:0;
@@ -160,7 +147,6 @@ a {
 	background-color: #6DD1C3;
 	background:url(../images/skyline.png) no-repeat center bottom fixed;
 	background-size: 100%;
-	/*background-position: 0% 40%;*/
 	color:#fff;
 }
 
@@ -199,6 +185,7 @@ section {
 	height: 100%;
 	background: #6DD1C3;
 	display:table;
+	color: #fff;
 }
 
 #contact-info {
@@ -208,6 +195,9 @@ section {
 
 i {
 	font-size: 40px;
+}
+a:link, a:visited, a:active {
+	color:#fff;
 }
 
 .section-content {
@@ -267,6 +257,9 @@ h2 {
 	background-color: rgba(255, 255, 255, 0.95);
 	opacity:0;
 	-webkit-transition: opacity 1s ease-out;
+	-moz-transition: opacity 1s ease-out;
+	-o-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
 	height: 0;
 	overflow: hidden;
 }
