@@ -37,6 +37,7 @@ ul {
 
 .contact {
 	margin: 0 auto;
+	color: #fff;
 }
 
 .hello {
@@ -185,7 +186,6 @@ section {
 	height: 100%;
 	background: #6DD1C3;
 	display:table;
-	color: #fff;
 }
 
 #contact-info {

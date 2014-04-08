@@ -3,6 +3,7 @@ function initialize(){
 
 	// global vairables
 	var controller = new ScrollMagic();
+	var $html = $('html');
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
 	var $contactTop = ($('#contact').offset().top);
@@ -46,24 +47,24 @@ function initialize(){
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if ($body.scrollTop() > 3600) {
-			var duration2 = 1200
-			$('.ruby').animate({ width:"660px" }, duration2,function(){});
-			$('.rails').delay(50).animate({ width:"630px" }, duration2,function(){});
-			$('.jquery').delay(100).animate({ width:"530px" }, duration2,function(){});
-			$('.css').delay(150).animate({ width:"490px" }, duration2,function(){});
-			$('.ajax').delay(200).animate({ width:"430px" }, duration2,function(){});
-			$('.backbone').delay(250).animate({ width:"430px" }, duration2,function(){});
-			$('.bow-hunting').delay(500).animate({ width:"680px" }, duration2,function(){});
+		if (($html.scrollTop() > 3400) || ($body.scrollTop() > 3400)) {
+			var duration = 1200
+			$('.ruby').animate({ width:"660px" }, {duration: duration});
+			$('.rails').delay(50).animate({ width:"630px" }, duration, function(){});
+			$('.jquery').delay(100).animate({ width:"530px" }, duration, function(){});
+			$('.css').delay(150).animate({ width:"490px" }, duration, function(){});
+			$('.ajax').delay(200).animate({ width:"430px" }, duration, function(){});
+			$('.backbone').delay(250).animate({ width:"430px" }, duration, function(){});
+			$('.bow-hunting').delay(500).animate({ width:"680px" }, duration, function(){});
 		}
 	} // --------- END skills animation ----------
 
 	function taglineFade(){
 		var $tagline = $('#landing-title-tagline');
 		var $skyline = $('#landing-pane');
-		if($body.scrollTop() > 20) {
+		if (($html.scrollTop() > 20) || ($body.scrollTop() > 20)) {
 			$tagline.addClass('fadeOutUp');
-		} else if ($body.scrollTop() < 20) {
+		} else if (($html.scrollTop() < 20) || ($body.scrollTop() < 20)){
 			$tagline.removeClass('fadeOutUp');
 		}
 	}
@@ -82,8 +83,8 @@ function initialize(){
 			.addTo(controller)
 			.triggerHook(0);		
 	}
-	function stickyNav(){
-		
+
+	function stickyNav(){	
 		var $windowScrollTop = $(window).scrollTop();
 		var $nav = $('nav');
 
@@ -99,20 +100,23 @@ function initialize(){
 	};
 
 	function setJquerySelectors(){
-
 		// -------animate scroll on nav clicks
 		$('li a').click(function(){
 			var $href = $(this).attr('href');
 			var $anchor = $($href).offset();
+			$html.animate({ scrollTop: $anchor.top });
 			$body.animate({ scrollTop: $anchor.top });
 			return false;
 		}); // ----------- END ANIMATE NAV SCROLL-----------------
 
 		// arrow on landing pane
 		$('#scroll-indicator').click(function(){
-			var $href = '#about-me';
-			var $anchor = $($href).offset();
+			console.log('clicked');
+			var href = '#about-me';
+			var $anchor = $(href).offset();
+			$html.animate({ scrollTop: $anchor.top }, 800);
 			$body.animate({ scrollTop: $anchor.top }, 800);
+
 			return false;
 		})
 	}
