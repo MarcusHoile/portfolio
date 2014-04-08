@@ -1,0 +1,11 @@
+@media screen and (max-width: 980px) {
+	section {
+		width:95%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	section {
+		width:auto;
+	}
+}

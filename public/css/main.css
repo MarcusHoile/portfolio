@@ -339,17 +339,7 @@ h2 {
    clear: both;
 }
 
-/* mobile css */
 
-/* high resolution screens */
-/*@media (-webkit-min-device-pixel-ratio: 2),
-             (min--moz-device-pixel-ratio: 2),
-             (min-resolution: 300dpi) {
-  #value-prop .section-content, #projects .section-content {
-		max-width:480px;
-		margin:0 auto;
-	}
-}*/
 
 
 

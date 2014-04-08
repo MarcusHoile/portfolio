@@ -8,6 +8,7 @@
 	<meta name="author" content="Marcus Hoile">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/media-queries.css" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="images/favicon.png"/>
@@ -20,79 +21,78 @@
 	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
 </head>
 <body>
-	<header>
-
-	</header>
-		<div id="landing-pane">
-			<div class="inner">
-				<div class="section-title animated" id="landing-title-tagline">
-					<h1 id='page-title'>The Digital Dude</h1>
-					<p id="tagline">You found him</p>
-				</div>	
-				<div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
-				<!-- <img src="images/skyline.png" alt="" id="skyline"> -->
-				<div id="skyline"></div>
+	<div id="page-wrap">
+		<div id="content">
+			<div id="landing-pane">
+				<div class="inner">
+					<div class="section-title animated" id="landing-title-tagline">
+						<h1 id='page-title'>The Digital Dude</h1>
+						<p id="tagline">You found him</p>
+					</div>	
+					<div id="scroll-indicator"><i class="fa fa-angle-down"></i></div>
+					<!-- <img src="images/skyline.png" alt="" id="skyline"> -->
+					<div id="skyline"></div>
+				</div>
 			</div>
-		</div>
 
-		<nav>
-			<div>
-				<ul>
-					<li><a href="#about-me-content">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="http://marcushoile.blogspot.com.au">Blog</a></li>
-					<li><a href="#contact-info">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+			<nav>
+				<div>
+					<ul>
+						<li><a href="#about-me-content">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="http://marcushoile.blogspot.com.au">Blog</a></li>
+						<li><a href="#contact-info">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-		<section id="about-me" name="about-me">
-			<div id="about-me-content" class="section-content">
-				<h1>Hello</h1>
-				<div id="pic-container"><img id="profile-pic" src="images/profile_edited.jpg" alt=""></div>
-				<p id="pitch">My name is Marcus Hoile and I am a full stack web developer. I am a recent graduate of General Assembly and I love to code. I am looking for opportunities to take my rails skills to the next level. Take a look at some of my work below.</p>
-			</div>
-		</section>
-	</div>
-		<section id="projects" name="projects">
-			<div class="section-content">
-				<h2>Projects</h2>
-				<div class="project-container" id="project-1">
-					<img src="images/enviro-maps-world.png" alt="">
-					<div class="overlay">
-						<div id="project-content">
-							<h2>Enviro-maps</h2>
-							<p>Horrible name, noble purpose.</p>
-							<p>The site is to help raise awareness of the magnitude of environmental issues across the globe. Users can add markers on the map with information on the issue and how to help.</p>
-							<p>Key Tech: Javascript, Google Maps API, jQuery, Rails, Ajax. </p>
-							<p>Cool feature: recursive loop to achieve the zoom in and out.</p>
-							<a href="http://enviro-maps.herokuapp.com"><div class="button">View Site</div></a>
+			<section id="about-me" name="about-me">
+				<div id="about-me-content" class="section-content">
+					<h1>Hello</h1>
+					<div id="pic-container"><img id="profile-pic" src="images/profile_edited.jpg" alt=""></div>
+					<p id="pitch">My name is Marcus Hoile and I am a full stack web developer. I am a recent graduate of General Assembly and I love to code. I am looking for opportunities to take my rails skills to the next level. Take a look at some of my work below.</p>
+				</div>
+			</section>
+			<section id="projects" name="projects">
+				<div class="section-content">
+					<h2>Projects</h2>
+					<div class="project-container" id="project-1">
+						<img src="images/enviro-maps-world.png" alt="">
+						<div class="overlay">
+							<div id="project-content">
+								<h2>Enviro-maps</h2>
+								<p>Horrible name, noble purpose.</p>
+								<p>The site is to help raise awareness of the magnitude of environmental issues across the globe. Users can add markers on the map with information on the issue and how to help.</p>
+								<p>Key Tech: Javascript, Google Maps API, jQuery, Rails, Ajax. </p>
+								<p>Cool feature: recursive loop to achieve the zoom in and out.</p>
+								<a href="http://enviro-maps.herokuapp.com"><div class="button">View Site</div></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="project-container" id="project-2">
-					<img src="images/expense-tracker.png" alt="">
-					<div class="overlay">
-						<div id="project-content">
-							<h2>Expense Tracker</h2>
-							<p>Keep track of group expenses.</p>
-							<p>This was a group project which was a great learning experience in version control and project planning.</p>
-							<p>Key Tech: Ruby, Rails, CSS, Boostrap</p>
-							<p>Cool feature: settlements, notifications go out to those that owe money</p>
-							<a href="http://expnse-tracker-33.herokuapp.com"><div class="button">View Site</div></a>
+					<div class="project-container" id="project-2">
+						<img src="images/expense-tracker.png" alt="">
+						<div class="overlay">
+							<div id="project-content">
+								<h2>Expense Tracker</h2>
+								<p>Keep track of group expenses.</p>
+								<p>This was a group project which was a great learning experience in version control and project planning.</p>
+								<p>Key Tech: Ruby, Rails, CSS, Boostrap</p>
+								<p>Cool feature: settlements, notifications go out to those that owe money</p>
+								<a href="http://expnse-tracker-33.herokuapp.com"><div class="button">View Site</div></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="project-container" id="project-3">
-					<img src="images/lets-get-tickets-landing.png" alt="">
-					<div class="overlay">
-						<div id="project-content">
-							<h2>Let's Get Tickets</h2>
-							<p>Help organise buying group tickets</p>
-							<p>This is my first ruby on rails project built with only 4 weeks coding under my belt. Pretty cool if I do say so myself.</p>
-							<p>Key Tech: Ruby, Rails, CSS, Bootstrap </p>
-							<p>Cool features: friendships, invites, rsvp, notifications and countdown clock. </p>
-							<a href="http://letsgettickets.herokuapp.com"><div class="button">View Site</div></a>
+					<div class="project-container" id="project-3">
+						<img src="images/lets-get-tickets-landing.png" alt="">
+						<div class="overlay">
+							<div id="project-content">
+								<h2>Let's Get Tickets</h2>
+								<p>Help organise buying group tickets</p>
+								<p>This is my first ruby on rails project built with only 4 weeks coding under my belt. Pretty cool if I do say so myself.</p>
+								<p>Key Tech: Ruby, Rails, CSS, Bootstrap </p>
+								<p>Cool features: friendships, invites, rsvp, notifications and countdown clock. </p>
+								<a href="http://letsgettickets.herokuapp.com"><div class="button">View Site</div></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -118,7 +118,6 @@
 					<ul  class="contact hello">
 						<li> <a href="mailto:hello@marcushoile.com">marcushoile@gmail.com</a></li>
 						<li> <a href="tel:0412911555">0412 911 555</a></li>
-						
 					</ul>
 					<ul class="contact connect">
 						<p>or connect with me</p>
@@ -129,17 +128,14 @@
 					</ul>
 				</div>			
 			</section>
+		</div><!-- content -->
+	</div> <!-- page wrap -->
+	<script>
 
-
-			<script>
-
-			$(document).ready(function() {
-				initialize();
-		
-			});
-			</script>
-
-
-			<noscript>Please activate javascript to view this site properly.</noscript>
-		</body>
-		</html>`
+		$(document).ready(function() {
+			initialize();	
+		});
+	</script>
+	<noscript>Please activate javascript to view this site properly.</noscript>
+</body>
+</html>
