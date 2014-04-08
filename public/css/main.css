@@ -202,7 +202,10 @@ a:link, a:visited, a:active {
 .section-content {
 	width:720px;
 	margin:0 auto;
-	padding:0;
+}
+
+#about-me-content {
+	padding-top: 60px;
 }
 
 #value-prop .section-content, #projects .section-content {
