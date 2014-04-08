@@ -7,43 +7,16 @@ function initialize(){
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
 	var $contactTop = ($('#contact').offset().top);
-	// setScrollPins();
 	setJquerySelectors();
 	
-	// profilePics();
-	// addParallax();
-
-	function addParallax() {
-		var tween = new TimelineMax();
-			tween.add([
-				TweenMax.to("#parallaxContainer #landing-pane", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
-				TweenMax.to("#parallaxContainer #about-me", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone})
-			]);
-
-		// build scene
-		var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
-						.setTween(tween)
-						.setPin("#parallaxContainer")
-						.addTo(controller);
-
-		// show indicators (requires debug extension)
-		scene.addIndicators();
-	}
 	
 	$(window).scroll(function() {
 		stickyNav();
 		skillsAnimation();
 		taglineFade();
-		// skylineAnimate();
 		
 	});
 
-
-
-	function skylineAnimate() {
-		var $landingPane = $('#landing-pane');
-		$landingPane.animate({'opacity': '0'}, 500, 'linear');
-	}
 
 	function skillsAnimation(){
 		// ------- skills animation 
@@ -69,20 +42,6 @@ function initialize(){
 		}
 	}
 
-	function setScrollPins(){
-		// init controller
-		controller = new ScrollMagic();
-		var scrollDuration = 1000;
-		// build scene
-		new ScrollScene({triggerElement: "#trigger1", duration: scrollDuration})
-			.setPin("#about-me")
-			.addTo(controller)
-			.triggerHook(0);
-		new ScrollScene({triggerElement: "#trigger4", duration: scrollDuration})
-			.setPin("#skills")
-			.addTo(controller)
-			.triggerHook(0);		
-	}
 
 	function stickyNav(){	
 		var $windowScrollTop = $(window).scrollTop();
