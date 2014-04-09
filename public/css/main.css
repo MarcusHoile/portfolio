@@ -207,7 +207,7 @@ a:link, a:visited, a:active {
 .section-content {
 	max-width:720px;
 	margin:0 auto;
-	padding: 3% 0;
+	padding: 5% 0;
 }
 
 #about-me-content {
@@ -217,6 +217,10 @@ a:link, a:visited, a:active {
 #value-prop .section-content, #projects .section-content {
 	max-width:900px;
 	margin:0 auto;
+}
+.spacer {
+	padding: 5%;
+	height: 100%;
 }
 
 nav a {
