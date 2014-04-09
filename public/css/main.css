@@ -105,7 +105,7 @@ h1 {
 	font-size: 42px;
 }
 #landing-title-tagline {
-	/*padding-top: 20%;*/
+	padding-top: 20%;
 }
 
 .spacer {
@@ -141,12 +141,10 @@ a {
 #about-me {
 	padding-top: 15%;
 	padding-bottom: 10%;
-	/*position:relative;*/
 }
 
 
 #landing-pane {
-	/*position:absolute;*/
 	top:0;
 	left:0;
 	margin:0;
@@ -157,9 +155,7 @@ a {
 	background-size: 100%;
 	color:#fff;
 }
-.inner {
-	/*height:100%;*/
-}
+
 
 
 
@@ -303,9 +299,7 @@ h2 {
 #scroll-indicator {
 	height:50px;
 	width:50px;
-	/*position:relative;*/
-	/*top: 20%;*/
-	margin: 0 auto;
+	margin: 10% auto;
 	border: solid 2px #fff;
 	border-radius: 30px;
 	font-size: 24px;
