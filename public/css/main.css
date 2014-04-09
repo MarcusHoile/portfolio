@@ -8,7 +8,7 @@ body {
 	font-family: 'Lato';
 }
 
-html, div, body, section, .project-container, .section-content, .project-content, #landing-pane, .inner {
+html, body, section, .project-container, .section-content, .project-content, #landing-pane, .inner {
 	min-height:100%;
 	width:100%;
 }
@@ -207,6 +207,7 @@ a:link, a:visited, a:active {
 .section-content {
 	max-width:720px;
 	margin:0 auto;
+	padding: 3% 0;
 }
 
 #about-me-content {
