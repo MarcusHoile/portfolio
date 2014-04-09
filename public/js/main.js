@@ -7,29 +7,32 @@ function initialize(){
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
 	var $contactTop = ($('#contact').offset().top - 50);
+	var $skillsTrigger = $('#skill-trigger').offset().top;
+	var $windowScrollTop = $(window).scrollTop();
 	setJquerySelectors();
 	
 	
 	$(window).scroll(function() {
 		stickyNav();
-		skillsAnimation();
 		taglineFade();
+		var $windowScrollTop = $(window).scrollTop();
+		if ($windowScrollTop > $skillsTrigger) {
+			skillsAnimation();
+		}
 		
 	});
 
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if (($html.scrollTop() > 4400) || ($body.scrollTop() > 4400)) {
-			var duration = 1200
-			$('.ruby').animate({ width:"93%" }, {duration: duration});
-			$('.rails').delay(50).animate({ width:"88%" }, duration, function(){});
-			$('.jquery').delay(100).animate({ width:"75%" }, duration, function(){});
-			$('.css').delay(150).animate({ width:"73%" }, duration, function(){});
-			$('.ajax').delay(200).animate({ width:"64%" }, duration, function(){});
-			$('.backbone').delay(250).animate({ width:"64%" }, duration, function(){});
-			$('.bow-hunting').delay(500).animate({ width:"98%" }, duration, function(){});
-		}
+		var duration = 1200
+		$('.ruby').animate({ width:"93%" }, {duration: duration});
+		$('.rails').delay(50).animate({ width:"88%" }, duration, function(){});
+		$('.jquery').delay(100).animate({ width:"75%" }, duration, function(){});
+		$('.css').delay(150).animate({ width:"73%" }, duration, function(){});
+		$('.ajax').delay(200).animate({ width:"64%" }, duration, function(){});
+		$('.backbone').delay(250).animate({ width:"64%" }, duration, function(){});
+		$('.bow-hunting').delay(500).animate({ width:"98%" }, duration, function(){});
 	} // --------- END skills animation ----------
 
 	function taglineFade(){
@@ -44,8 +47,8 @@ function initialize(){
 
 
 	function stickyNav(){	
-		var $windowScrollTop = $(window).scrollTop();
 		var $nav = $('nav');
+		var $windowScrollTop = $(window).scrollTop();
 
 		if ($windowScrollTop > $stickyNavTop) { 
 			$nav.addClass('sticky');

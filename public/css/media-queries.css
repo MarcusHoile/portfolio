@@ -1,16 +1,10 @@
 @media screen and (max-width: 980px) {
-	section {
-		padding:0 5px;
-	}
-	#project-content, .section-content {
-		width: 95%;
-	}
+
 }
 
 @media screen and (max-width: 650px) {
 	section {
 		width:auto;
-		padding:0 5px;
 	}
 
 	nav {
@@ -26,8 +20,12 @@
 	h2 {
 		font-size:40px;
 	}
+	#landing-pane {
+		height:100%;
+	}
 
-	#project-content, .section-content {
-		width: 90%;
+	.section-container {
+	padding:5%;
+	height: 100%;
 	}
 }
