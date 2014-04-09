@@ -8,7 +8,7 @@ body {
 	font-family: 'Lato';
 }
 
-html, body, section, .project-container, .section-content, .project-content, #landing-pane, .inner  {
+html, div, body, section, .project-container, .section-content, .project-content, #landing-pane, .inner {
 	min-height:100%;
 	width:100%;
 }
@@ -105,7 +105,7 @@ h1 {
 	font-size: 42px;
 }
 #landing-title-tagline {
-	padding-top: 20%;
+	/*padding-top: 20%;*/
 }
 
 .spacer {
@@ -141,17 +141,24 @@ a {
 #about-me {
 	padding-top: 15%;
 	padding-bottom: 10%;
+	/*position:relative;*/
 }
 
 
 #landing-pane {
+	/*position:absolute;*/
+	top:0;
+	left:0;
 	margin:0;
 	padding:0;
-	/*min-height:100%;*/
+	height:100vh;
 	background-color: #6DD1C3;
 	background:url(../images/skyline.png) no-repeat center bottom;
 	background-size: 100%;
 	color:#fff;
+}
+.inner {
+	/*height:100%;*/
 }
 
 
@@ -296,8 +303,8 @@ h2 {
 #scroll-indicator {
 	height:50px;
 	width:50px;
-	position:relative;
-	top: 20%;
+	/*position:relative;*/
+	/*top: 20%;*/
 	margin: 0 auto;
 	border: solid 2px #fff;
 	border-radius: 30px;
@@ -313,16 +320,14 @@ h2 {
 	background: rgba(255,255,255, 0.3);
 }
 
-section:before,
-section:after {
+.clearfix:before,
+.clearfix:after {
   content:"";
   display:table;
 }
-section:after {
+.clearfix:after {
   clear:both;
 }
-section {
-  zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
+
 
 
