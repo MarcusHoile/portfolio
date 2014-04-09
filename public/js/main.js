@@ -57,6 +57,8 @@ function initialize(){
 		}
 		// hide nav when on contact section
 		if ($windowScrollTop > $contactTop) {
+			console.log('i removed the class');
+			
 			$nav.removeClass('sticky'); 	
 		}
 	};
