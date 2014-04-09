@@ -77,11 +77,13 @@ ul {
 	width:100%;
 }
 .connect li {
-	min-width: 100px;
 	display:inline-block;
 }
 
-
+#skills a {
+	color: #000;
+	text-decoration: underline;
+}
 
 
 nav {
@@ -189,6 +191,7 @@ section {
 #contact {
 	background: #6DD1C3;
 	display:table;
+	height: 100vh;
 }
 
 #contact-info {
