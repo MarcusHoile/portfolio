@@ -6,7 +6,7 @@ function initialize(){
 	var $html = $('html');
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
-	var $contactTop = ($('#contact').offset().top);
+	var $contactTop = ($('#contact').offset().top - 50);
 	setJquerySelectors();
 	
 	
@@ -20,7 +20,7 @@ function initialize(){
 
 	function skillsAnimation(){
 		// ------- skills animation 
-		if (($html.scrollTop() > 3400) || ($body.scrollTop() > 3400)) {
+		if (($html.scrollTop() > 4400) || ($body.scrollTop() > 4400)) {
 			var duration = 1200
 			$('.ruby').animate({ width:"93%" }, {duration: duration});
 			$('.rails').delay(50).animate({ width:"88%" }, duration, function(){});
