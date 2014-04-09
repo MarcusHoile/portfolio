@@ -3,9 +3,7 @@
 }
 
 @media screen and (max-width: 650px) {
-	section {
-		width:auto;
-	}
+
 
 	nav {
 		display:none;
