@@ -2,6 +2,13 @@
 	#landing-pane, #contact {
 		height:100%;
 	}
+	.section-content {
+		padding: 10% auto;
+	}
+
+	#skills {
+		padding-bottom: 10%;
+	}
 }
 
 @media screen and (max-width: 650px) {

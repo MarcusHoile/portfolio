@@ -13,7 +13,7 @@ function initialize(){
 	
 	$(window).scroll(function() {
 		stickyNav();
-		taglineFade();
+		// taglineFade();
 		var $windowScrollTop = $(window).scrollTop();
 		if ($windowScrollTop > $skillsTrigger) {
 			skillsAnimation();
@@ -56,7 +56,6 @@ function initialize(){
 		}
 		// hide nav when on contact section
 		if ($windowScrollTop > $contactTop) {
-
 			$nav.removeClass('sticky'); 	
 		}
 	};

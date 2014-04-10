@@ -183,6 +183,9 @@ a {
 section {
 	margin: 0 auto;
 	text-align:center;
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 #projects {
@@ -282,6 +285,7 @@ h2 {
 #skills {
 	width: 100%;
 	margin: 0 auto;
+	padding-bottom: 5%;
 }
 .skill-label {
 	margin:0;
