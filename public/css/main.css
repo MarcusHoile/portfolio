@@ -322,7 +322,7 @@ h2 {
 	height:50px;
 	width:50px;
 	margin: 10% auto;
-	border: solid 2px #fff;
+	/*border: solid 2px #fff;*/
 	border-radius: 30px;
 	font-size: 24px;
 }
