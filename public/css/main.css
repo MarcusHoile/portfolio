@@ -236,6 +236,12 @@ a:link, a:visited, a:active {
 nav a {
 	text-decoration:none;
 	color: #fff;
+	padding: 20px;
+	min-width:80px;
+}
+
+nav a:hover {
+	background: rgba(255,255,255, 0.3);
 }
 
 .project-container {
