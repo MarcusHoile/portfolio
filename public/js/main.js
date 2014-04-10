@@ -2,7 +2,6 @@
 function initialize(){
 
 	// global vairables
-	var controller = new ScrollMagic();
 	var $html = $('html');
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
@@ -57,8 +56,7 @@ function initialize(){
 		}
 		// hide nav when on contact section
 		if ($windowScrollTop > $contactTop) {
-			console.log('i removed the class');
-			
+
 			$nav.removeClass('sticky'); 	
 		}
 	};
@@ -75,7 +73,6 @@ function initialize(){
 
 		// arrow on landing pane
 		$('#scroll-indicator').click(function(){
-			console.log('clicked');
 			var href = '#about-me';
 			var $anchor = $(href).offset();
 			$html.animate({ scrollTop: $anchor.top }, 800);

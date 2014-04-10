@@ -1,5 +1,7 @@
 @media screen and (max-width: 980px) {
-
+	#landing-pane, #contact {
+		height:100%;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -15,10 +17,23 @@
 		padding: 5px 0;
 	}
 
+	ul li {
+		min-width: 55px;
+	}
+
 	h2 {
 		font-size:40px;
 	}
-	#landing-pane {
+
+	h3 {
+		font-size: 24px;
+	}
+	
+	p, #pitch {
+		font-size: 16px;
+	}
+
+	#landing-pane, #contact {
 		height:100%;
 	}
 
