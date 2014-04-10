@@ -5,7 +5,7 @@ function initialize(){
 	var $html = $('html');
 	var $body = $('body');
 	var $stickyNavTop = $('nav').offset().top;
-	var $contactTop = ($('#contact').offset().top - 50);
+	var $contactTop = ($('#contact').offset().top);
 	var $skillsTrigger = $('#skill-trigger').offset().top;
 	var $windowScrollTop = $(window).scrollTop();
 	setJquerySelectors();
@@ -55,9 +55,9 @@ function initialize(){
 			$nav.removeClass('sticky'); 
 		}
 		// hide nav when on contact section
-		if ($windowScrollTop > $contactTop) {
-			$nav.removeClass('sticky'); 	
-		}
+		// if ($windowScrollTop > $contactTop) {
+		// 	$nav.removeClass('sticky'); 	
+		// }
 	};
 
 	function setJquerySelectors(){
