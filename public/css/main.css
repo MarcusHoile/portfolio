@@ -325,7 +325,7 @@ h2 {
 #scroll-indicator {
 	height:50px;
 	width:50px;
-	margin: 10% auto;
+	margin: 2% auto 15% auto;
 	/*border: solid 2px #fff;*/
 	border-radius: 30px;
 	font-size: 24px;
